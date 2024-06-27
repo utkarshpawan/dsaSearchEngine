@@ -48,7 +48,7 @@ app.get("/search", (req, res) => {
     var array2= fs.readFileSync('IB_problem_titles.txt').toString().split("\n");
     tf_idf = new TfIdf();
     const arr = [];
-    for(let i = 1; i <= 96; i++) 
+    for(let i = 1; i <= 90; i++) 
     {
         if (i==269)
         {
@@ -57,7 +57,7 @@ app.get("/search", (req, res) => {
         const t="./IB_problem" + i.toString() + ".txt";
         arr.push(t);
     }
-    for(let i = 51; i <= 610; i++) 
+    for(let i = 126; i <= 140; i++) 
     {
         
         const t="./LC_problem" + i.toString() + ".txt";
