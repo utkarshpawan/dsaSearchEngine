@@ -48,7 +48,7 @@ app.get("/search", (req, res) => {
     var array2= fs.readFileSync('IB_problem_titles.txt').toString().split("\n");
     tf_idf = new TfIdf();
     const arr = [];
-    for(let i = 1; i <= 441; i++) 
+    for(let i = 1; i <= 96; i++) 
     {
         if (i==269)
         {
